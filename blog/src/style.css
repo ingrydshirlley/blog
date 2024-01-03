@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f5f7;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+    padding-top: 3.05rem;
+    padding-bottom: 3.05rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    position: fixed;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+}
+
+header .logo h2 {
+    font-weight: 400;
+}
+
+header .label {
+    display: flex;
+    flex-direction: row;
+    width: 57%;
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: .3rem;
+    height: 3rem;
+    align-items: center;
+    padding-left: .5rem;
+}
+
+header .label span {
+    color: #ffffff;
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    gap: .5rem;
+    font-weight: 500;
+}
+
+header .label span span{
+    color: #939dee;
+    font-size: 1rem;
+    align-self: center;
+    height: 100%;
+}
+
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    align-items: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    gap: 1.5rem;
+    overflow:auto;
+    height: 30rem;
+}
+
+article {
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 0px rgba(19, 19, 31, 0.05);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    border: .5px solid white;
+    transition: all .5s ease-in-out;
+}
+
+article:hover {
+    border: 1px solid #988ff6;
+}
+
+article div {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+article div h2{
+    display: flex;
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+article div p{
+    display: flex;
+    width: 100%;
+    align-items: start;
+    color: grey;
+    flex-direction: column;
+}
+
+article div div{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: gray;
+}
+
+article div div span{
+    gap: 1rem;
+    color: #574AE8;
+}
